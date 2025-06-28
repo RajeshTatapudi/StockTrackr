@@ -28,15 +28,6 @@ StockTrackr is an intuitive stock analysis and tracking app that provides real-t
 
 ---
 
-## 📷 Screenshots
-
-_Add some UI screenshots here (e.g., `/assets/screenshot1.png`)_
-
-```
-
-![Dashboard Preview](./assets/screenshot1.png)
-
-````
 
 ---
 
@@ -86,13 +77,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ```
 
-### ✅ Next Step:
-You can copy this into your project's `README.md` file.
-
-Would you like me to:
-- Add a logo or favicon to the project?
-- Help you deploy this to Vercel/Netlify?
-- Create the LinkedIn post content next?
-
-Let me know!
-```
