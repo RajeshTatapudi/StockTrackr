@@ -1,0 +1,190 @@
+/* About.css */
+
+.about-container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #f6f9fc, #eef2f6);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease;
+  }
+  
+  .about-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #1a73e8;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-description {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 50px;
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+  
+  /* Mission Section */
+  .about-mission h2 {
+    font-size: 2.2rem;
+    color: #1a73e8;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-mission p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Features Section */
+  .about-features h2 {
+    font-size: 2.2rem;
+    color: #1a73e8;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .feature {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    color: #1a73e8;
+    margin-bottom: 15px;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Why Choose Us Section */
+  .about-why-choose {
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f7faff);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-why-choose h2 {
+    font-size: 2.2rem;
+    color: #1a73e8;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .about-why-choose ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-why-choose ul li {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .about-why-choose ul li::before {
+    content: "✔️";
+    color: #1a73e8;
+    font-size: 1.5rem;
+  }
+  
+  /* Team Section */
+  .about-team {
+    margin-top: 60px;
+  }
+  
+  .about-team h2 {
+    font-size: 2.2rem;
+    color: #1a73e8;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+  
+  .team-member {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #f7f7f7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member h3 {
+    font-size: 1.4rem;
+    color: #1a73e8;
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

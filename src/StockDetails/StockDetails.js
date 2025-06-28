@@ -1,0 +1,6 @@
+function StockDetails(){
+  return(
+    <>
+    Hello</>
+  )
+}

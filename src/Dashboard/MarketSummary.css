@@ -1,0 +1,32 @@
+/* MarketSummary */
+.market-summary {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .market-summary h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .market-summary ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .market-summary li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  
+  .market-summary .positive {
+    color: green;
+  }
+  
+  .market-summary .negative {
+    color: red;
+  }
+  

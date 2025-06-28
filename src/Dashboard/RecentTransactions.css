@@ -1,0 +1,72 @@
+/* RecentTransactions */
+.recent-transactions {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Set to auto to allow proper column widths */
+  }
+  
+  .recent-transactions th, 
+  .recent-transactions td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .recent-transactions th {
+    background-color: #f9f9f9;
+  }
+  
+  .recent-transactions .buy {
+    color: green;
+  }
+  
+  .recent-transactions .sell {
+    color: red;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .recent-transactions {
+      padding: 15px; /* Reduce padding on smaller screens */
+    }
+  
+    .recent-transactions th,
+    .recent-transactions td {
+      padding: 8px; /* Reduce padding for better readability on smaller screens */
+    }
+  
+    /* Prevent table columns from stacking on small screens */
+    .recent-transactions table {
+      display: block;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent columns from wrapping */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .recent-transactions {
+      padding: 10px; /* Further reduce padding on very small screens */
+    }
+  
+    .recent-transactions th,
+    .recent-transactions td {
+      padding: 5px; /* Reduce padding even more for very small screens */
+      font-size: 14px; /* Make font smaller on small screens */
+    }
+  
+    .recent-transactions table {
+      font-size: 12px; /* Make font smaller in table for readability */
+    }
+  
+    .recent-transactions th {
+      font-size: 16px; /* Make header font size slightly bigger */
+    }
+  }
+  

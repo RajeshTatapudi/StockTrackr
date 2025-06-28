@@ -1,0 +1,24 @@
+/* OverviewPanel */
+.overview-panel {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overview-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .overview-item span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .overview-item .value {
+    color: #007bff;
+  }
+  

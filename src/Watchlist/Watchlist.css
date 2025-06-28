@@ -1,0 +1,411 @@
+/* Watchlist Container */
+.watchlist {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 30px auto;
+    box-sizing: border-box;
+    transition: height 0.3s ease, padding 0.3s ease;
+    overflow: hidden; /* Ensures no content spills out */
+}
+/* Title Styling */
+.watchlist h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #007bff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #007bff 30%, #00d4ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Add Stock Form */
+.watchlist-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.watchlist-form input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.watchlist-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.watchlist-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.watchlist-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Watchlist Items */
+.watchlist-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.watchlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
+    gap: 10px;
+}
+
+.watchlist-item.edit-mode {
+    flex-direction: column; /* Align items vertically in edit mode */
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px; /* Adjust spacing for better visibility */
+}
+
+/* Search and Filter */
+.search-filter {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.search-filter input,
+.search-filter select {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.search-filter input:focus,
+.search-filter select:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+}
+
+/* Sorting Options */
+.sorting-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.sorting-options select,
+.sorting-options button {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sorting-options select:hover,
+.sorting-options button:hover {
+    background-color: #f8f9fa;
+}
+
+.sorting-options button {
+    background-color: #28a745;
+    color: white;
+}
+
+.sorting-options button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* Watchlist Items */
+.watchlist-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.watchlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.watchlist-item:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Stock Details */
+.stock-details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.stock-details .stock-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.stock-details .stock-ticker {
+    color: #555;
+}
+
+.stock-details .stock-price {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.stock-details .stock-price.positive {
+    color: #28a745;
+}
+
+.stock-details .stock-price.negative {
+    color: #dc3545;
+}
+
+.stock-details .stock-category {
+    font-size: 1rem;
+    color: #777;
+    background-color: #e9ecef;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+/* Favorite Icon */
+.favorite-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ccc;
+    transition: transform 0.3s ease;
+}
+
+.favorite-icon.favorited {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Remove Stock Button */
+.remove-stock-btn {
+    padding: 10px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.remove-stock-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.edit-btn {
+    margin: 0px 10px;
+    padding: 10px 15px;
+    background-color: #b845cf;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: #8a339c;
+    transform: translateY(-2px);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.pagination button {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination button:hover:not(.active) {
+    background-color: #f0f0f0;
+}
+
+.pagination button.active:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Edit Mode */
+.edit-mode {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-mode input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.edit-mode input:focus {
+    outline: none;
+    border-color: #17a2b8;
+    box-shadow: 0 0 8px rgba(23, 162, 184, 0.3);
+}
+
+.edit-mode button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.edit-mode button:first-of-type {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-mode button:first-of-type:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.edit-mode button:last-of-type {
+    background-color: #6c757d;
+    color: white;
+}
+
+.edit-mode button:last-of-type:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .watchlist-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .watchlist-items {
+        padding: 0 10px;
+    }
+
+    .watchlist-item {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .stock-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .favorite-icon {
+        margin-top: 10px;
+    }
+
+    .pagination {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .pagination button {
+        width: 100%;
+    }
+
+    .edit-mode input {
+        width: 100%;
+    }
+
+    .edit-mode {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .watchlist {
+        padding: 15px;
+    }
+
+    .watchlist h2 {
+        font-size: 1.5rem;
+    }
+
+    .watchlist-form input, .watchlist-form button,
+    .search-filter input, .search-filter select,
+    .sorting-options select, .sorting-options button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .edit-btn, .remove-stock-btn, .edit-mode button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
