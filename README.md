@@ -1,55 +1,61 @@
-Great! Here's a polished `README.md` for your **StockTrackr** app:
+Here's your updated and polished `README.md` with the modified LinkedIn profile link and a few minor improvements for clarity and style:
 
 ---
 
-```markdown
+````markdown
 # 📈 StockTrackr
 
-StockTrackr is an intuitive stock analysis and tracking app that provides real-time stock data, visualizations, and easy-to-use filtering tools. It helps users stay on top of market trends and make informed decisions.
+**StockTrackr** is a smart stock watchlist and analysis app designed to help users track stocks, visualize trends, and stay informed with an intuitive interface.
 
 ---
 
 ## 🚀 Features
 
-- 🔍 **Search and track stocks** in real time
-- 📊 **Interactive charts** and visualizations (price, volume, etc.)
-- 🔔 **Alerts** and stock-specific highlights
-- 📁 Clean, component-based frontend structure (React)
-- 🌐 Easy integration with APIs (like Alpha Vantage, Yahoo Finance, etc.)
+- 🔍 **Search and manage your favorite stocks**
+- 📊 **Interactive visualizations** (price, category, changes)
+- ❤️ **Favorite toggle** and quick filtering
+- 📁 Clean, modular frontend structure built with React
+- 🔐 Backend CRUD with JWT, MySQL, and Express.js
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js (with Hooks)
-- **Styling:** CSS / TailwindCSS / Material UI (if applicable)
-- **APIs:** Financial data API (you can add your source here)
-- **Version Control:** Git + GitHub
-
----
-
+- **Frontend:** React.js (Hooks, Axios)
+- **Styling:** TailwindCSS / CSS Modules
+- **Backend:** Node.js + Express
+- **Database:** MySQL
+- **APIs:** REST API (custom-built)
+- **Deployment:** Netlify (frontend))
+- **AI Assistant:** ChatGPT (for logic, debugging, planning)
 
 ---
 
 ## 🧪 Installation & Setup
 
 ```bash
-# 1. Clone the repo
+# 1. Clone the repository
 git clone https://github.com/RajeshTatapudi/StockTrackr.git
 cd StockTrackr
 
-# 2. Install dependencies
+# 2. Install frontend dependencies
+cd frontend
 npm install
-
-# 3. Start the development server
 npm start
+
+# 3. Install backend dependencies (if in backend folder)
+cd ../backend
+npm install
+node index.js  # or nodemon index.js
 ````
+
+> ⚠️ Make sure your MySQL server is running and credentials are updated in `backend/index.js`.
 
 ---
 
 ## 🌐 Live Demo
 
-*Coming soon on [Vercel](https://vercel.com) or [Netlify](https://netlify.com)!*
+🔗 [https://stocktrackrweb.netlify.app](https://stocktrackrweb.netlify.app)
 
 ---
 
@@ -62,18 +68,16 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## 🙌 Acknowledgements
 
 * [React](https://reactjs.org/)
-* [Financial Modeling Prep](https://financialmodelingprep.com/)
-* [Alpha Vantage](https://www.alphavantage.co/)
-* Icons from [Heroicons](https://heroicons.com/) and [FontAwesome](https://fontawesome.com/)
+* [MySQL](https://www.mysql.com/)
+* [Netlify](https://netlify.com)
+* [OpenAI ChatGPT](https://chat.openai.com) – used extensively during development
+* Icons from [Heroicons](https://heroicons.com/) & [FontAwesome](https://fontawesome.com/)
 
 ---
 
 ## 🤝 Connect with Me
 
 👨‍💻 **Rajesh Tatapudi**
-[GitHub](https://github.com/RajeshTatapudi) | [LinkedIn](https://linkedin.com/in/rajeshtatapudi)
+[GitHub](https://github.com/RajeshTatapudi) | [LinkedIn](https://www.linkedin.com/in/rajesh-tatapudi-6a5020283)
 
 ---
-
-```
-
