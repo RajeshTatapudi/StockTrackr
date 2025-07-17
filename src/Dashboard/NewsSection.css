@@ -1,0 +1,21 @@
+.news-section {
+    background: linear-gradient(to right, #ffffff, #f8f9fa);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.news-section li {
+    margin: 10px 0;
+}
+
+.news-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-section a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

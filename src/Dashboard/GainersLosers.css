@@ -1,0 +1,33 @@
+/* GainersLosers */
+.gainers-losers {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gainers-losers h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .gainers-losers .list-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .gainers-losers .gainers, .gainers-losers .losers {
+    width: 48%;
+  }
+  
+  .gainers-losers ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .gainers-losers li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  

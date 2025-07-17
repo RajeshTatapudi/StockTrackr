@@ -1,0 +1,146 @@
+/* Help.css */
+
+.help-center {
+    padding: 40px;
+    font-family: "Poppins", Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #ffffff, #f8f9fc);
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    position: relative;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #222;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: linear-gradient(to right, #0078ff, #00c2ff);
+    margin: 15px auto 0;
+    border-radius: 3px;
+  }
+  
+  .topics {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .topic {
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #f8f9fc, #ffffff);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .topic h3,
+  .topic p {
+    position: relative; /* Ensures the text appears on top */
+    z-index: 1; /* Places text above ::before */
+  }
+  
+  .topic h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+  }
+  
+  .topic p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+  }
+  
+  /* Decorative gradient glow effect */
+  .topic::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 120, 255, 0.1), rgba(255, 255, 255, 0));
+    transform: scale(0);
+    transition: transform 0.4s ease;
+    z-index: 0; /* Ensures the glow stays behind the text */
+    border-radius: 50%;
+  }
+  
+  .topic:hover::before {
+    transform: scale(1.2);
+  }
+  
+  .topic:hover {
+    background: linear-gradient(145deg, #eef2f7, #ffffff);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .topic:hover h3 {
+    color: #0078ff;
+  }
+  
+  .topic:hover p {
+    color: #333;
+  }
+  
+  /* Hover pulse effect for icon or highlight */
+  .topic:hover {
+    animation: pulse 0.2s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: translateY(-3px) scale(1.02);
+    }
+    100% {
+      transform: translateY(-10px) scale(1);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .help-center {
+      padding: 30px;
+    }
+  
+    h2 {
+      font-size: 2.2rem;
+    }
+  
+    .topic h3 {
+      font-size: 1.4rem;
+    }
+  
+    .topic p {
+      font-size: 0.95rem;
+    }
+  }
+  

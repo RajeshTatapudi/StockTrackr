@@ -1,0 +1,350 @@
+/* Main container for the login page */
+.login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left side (image) */
+  .image-side {
+    flex: 1;
+    background-color: #f0f0f0; /* Optional background color */
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Right side (login form) */
+  .login-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    justify-content: space-between; /* Align top, center, bottom sections */
+  }
+  
+  .top-section {
+    display: flex;
+    justify-content: space-between; /* Ensures space between buttons and logo */
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Centered logo */
+  .logo-container {
+    flex-grow: 1; /* Ensures logo takes available space between the buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Back button */
+  .back-button {
+    font-size: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  /* Cancel button */
+  .cancel-button {
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  /* App logo */
+  .app-logo {
+    width: 200px; /* Adjust size as needed */
+  }
+  
+  /* Center section */
+  .center-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .login-first-interface h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-btn {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    background-color: #ffffff;
+    width: 100%;
+    border: 2px solid #ddd; /* Add 1px border */
+  }
+
+  .login-btn:hover{
+    background-color: #ebf6ff;
+    border: 1px solid #79a7cc;
+  }
+  
+
+  .custom-icon-size {
+    font-size: 1.2rem; /* Adjust this value to your preferred size */
+  }
+  
+  /* Specific button colors */
+  .login-btn.google {
+    color: #db4437; /* Google Red */
+    font-size: 13px;
+  }
+  
+  .login-btn.facebook {
+    color: #1877f2; /* Facebook Blue */
+  }
+  
+  .login-btn.twitter {
+    color: #000000; /* Twitter Blue */
+  }
+  
+  .login-btn.yahoo {
+    color: #720e9e; /* Yahoo Purple */
+  }
+  
+  .login-btn.apple {
+    color: #000; /* Apple Black */
+  }
+  
+  .login-btn.linkedin {
+    color: #0077b5; /* LinkedIn Blue */
+  }
+  
+  /* Button hover effect */
+  .login-btn:hover {
+    opacity: 0.9;
+  }
+  
+ /* For the "or" separator */
+.or-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .or-section .line {
+    flex: 1;
+    height: 1.5px; /* Adjust thickness */
+    background-color: #bbb; /* Adjust color for the line */
+    margin: 0 10px; /* Space around the "or" */
+  }
+  
+  .or-section span {
+    font-size: 16px;
+    color: #555; /* Neutral text color for "or" */
+    white-space: nowrap;
+  }
+  
+  /* Line above footer */
+  .no-text-line {
+    height: 1px; /* Same thickness as other lines */
+    background-color: #bbb; /* Same color as the separator */
+    margin-bottom: 10px; /* Adjust spacing above the footer */
+  }
+  
+  
+  
+  /* Email button */
+  .email-section {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .email-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ffffff; /* Blue for email button */
+    color: rgb(0, 0, 0);
+    width: 100%;
+    border: 2px solid #ddd; /* Add 1px border */
+  }
+  
+  .email-button:hover {
+    opacity: 0.9;
+    background-color: #ebf6ff;
+    border: 1px solid #79a7cc;
+  }
+  
+  /* Styles for the second interface (login form) */
+  .login-second-interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow around the form */
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto; /* Centering the form */
+    transition: all 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .login-second-interface h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin: 0px 30px;
+  }
+  
+  .login-second-interface form {
+    width: 100%;
+  }
+  
+  /* Input fields styling */
+  .login-second-interface input {
+    width: 30em;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .login-second-interface input:focus {
+    border-color: #0077b5;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    background-color: #fff;
+    outline: none;
+  }
+
+  .login-second-interface input:hover {
+    border-color: #0077b5;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    background-color: #fff;
+    outline: none;
+  }
+  
+  .submit-btn {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #137cb5;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    width: 28.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #006faa;
+  }
+  
+  .submit-btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .login-container {
+      flex-direction: column; /* Stack the image and form vertically */
+    }
+  
+    .image-side {
+      display: none; /* Hide the image on small screens */
+    }
+  
+    .login-side {
+      padding: 10px;
+    }
+  
+    .login-buttons {
+      grid-template-columns: 1fr; /* Stack buttons vertically */
+    }
+  
+    .login-second-interface {
+      padding: 15px;
+      max-width: 90%; /* Ensure responsiveness */
+    }
+  
+    .login-second-interface input {
+      font-size: 14px;
+      width:92%;
+    }
+  
+    .submit-btn {
+      font-size: 16px;
+      width:100%; 
+    }
+  }
+  
+  .footer {
+    bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .signup-link {
+    color: #0077b5;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+.input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    color: #999;
+  }
+  
+  #emaill {
+    padding-left: 35px;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #999;
+  }
+  
